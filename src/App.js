@@ -8,19 +8,19 @@ function App() {
   let subscriptions = [
     {
       id:"1",
-      date:(new Date("2021", "03", "23")),
+      date:(new Date("2021", "04", "23")),
       title:"Quaterly Plan",
       amount:"125.25"
     },
     {
       id:"2",
-      date:(new Date('2021', "08", "25")),
+      date:(new Date("2021", "05", "25")),
       title:"Monthly Plan",
       amount:"225.25"
     },
     {
       id:"3",
-      date:(new Date('2021', "10", "25")),
+      date:(new Date("2021", "06", "25")),
       title:"Yearly Plan",
       amount:"850.25"
     },
@@ -28,9 +28,9 @@ function App() {
 
   return (
     <div className="App">
-      <Subscription passedDate={subscriptions[0].date.toISOString()} passedTitle={subscriptions[0].title} passedAmount={subscriptions[0].amount} />
-      <Subscription passedDate={subscriptions[1].date.toISOString()} passedTitle={subscriptions[1].title} passedAmount={subscriptions[1].amount} />
-      <Subscription passedDate={subscriptions[2].date.toISOString()} passedTitle={subscriptions[2].title} passedAmount={subscriptions[2].amount} />
+      <Subscription date={subscriptions[0].date} title={subscriptions[0].title} amount={subscriptions[0].amount} />
+      <Subscription date={subscriptions[1].date} title={subscriptions[1].title} amount={subscriptions[1].amount} />
+      <Subscription date={subscriptions[2].date}  title={subscriptions[2].title} amount={subscriptions[2].amount} />
    </div>
   )
 }
