@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Subscription from './components/Subscription'
+import Container from './components/Container';
 
 
 
@@ -27,11 +27,11 @@ function App() {
   ]
 
   return (
-    <div className="App">
+    <Container>
       <Subscription date={subscriptions[0].date} title={subscriptions[0].title} amount={subscriptions[0].amount} />
       <Subscription date={subscriptions[1].date} title={subscriptions[1].title} amount={subscriptions[1].amount} />
-      <Subscription date={subscriptions[2].date}  title={subscriptions[2].title} amount={subscriptions[2].amount} />
-   </div>
+      <Subscription date={subscriptions[2].date} title={subscriptions[2].title} amount={subscriptions[2].amount} />
+   </Container>
   )
 }
 
