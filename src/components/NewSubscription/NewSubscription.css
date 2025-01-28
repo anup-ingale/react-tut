@@ -1,0 +1,8 @@
+.new_subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #f0f2f5;
+    padding: 2rem;
+}
