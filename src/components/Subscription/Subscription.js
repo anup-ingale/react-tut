@@ -1,10 +1,10 @@
 import "./Subscription.css";
 import SubscriptionDate from "./SubscriptionDate";
 import Container from "../templates/Container";
-import react,{useState} from "react";
+import {useState} from "react";
 
 const Subscription = (props) => {
-    const [title,setTitle] = useState(props.title)
+    const [title, setTitle] = useState(props.title)
     const onClickHandler = () => {
         setTitle("Hello Sir Wonderful!!")
     }
@@ -13,7 +13,9 @@ const Subscription = (props) => {
             <SubscriptionDate date={props.date} title={props.title} amount={props.amount}/>
             <h2 className="subscription_title">{title}</h2>
             <div className="subscription_price">{props.amount}</div>
-            <button type="button" className="button_class" onClick={onClickHandler}>Change Title</button>
+            <div className="form-button">
+                <button type="submit" onClick={onClickHandler}> Change </button>
+            </div>
         </Container>
     );
 }

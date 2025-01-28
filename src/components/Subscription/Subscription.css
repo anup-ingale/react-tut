@@ -20,11 +20,10 @@
   }
 
   .subscription h2 {
-    color: #3a3a3a;
+    color: white;
     font-size: 1rem;
     flex: 1;
     margin: 0 1rem;
-    color: white;
   }
 
   .subscription_price {
@@ -33,7 +32,27 @@
     color: white;
     background-color: #084a8e;
     border: 1px solid white;
-    padding: 0.5rem;
-    border-radius: 12px;
+    padding: 1rem;
   }
-  
+
+
+.form-button {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.form-button button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button button:hover {
+    background-color: #0056b3;
+}

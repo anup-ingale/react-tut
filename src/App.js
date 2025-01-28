@@ -2,6 +2,7 @@ import './App.css';
 import Subscription from './components/Subscription/Subscription'
 import Container from './components/templates/Container';
 import React from 'react';
+import NewSubscription from "./components/NewSubscription/NewSubscription";
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
     return (
         // React.createElement('div',{},React.createElement('h2',{},"Let's Start !! "))
         <Container>
+            <NewSubscription/>
             <Subscription date={subscriptions[0].date} title={subscriptions[0].title} amount={subscriptions[0].amount}/>
             <Subscription date={subscriptions[1].date} title={subscriptions[1].title} amount={subscriptions[1].amount}/>
             <Subscription date={subscriptions[2].date} title={subscriptions[2].title} amount={subscriptions[2].amount}/>
